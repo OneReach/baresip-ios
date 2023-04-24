@@ -103,7 +103,7 @@ EXTRA_AARCH64_SIM      := \
 		-Wno-aggregate-return \
 		-arch arm64 \
 		-I$(OPENSSL_PATH)/include \
-		-I$(OPUS_PATH)/include \		
+		-I$(OPUS_PATH)/include \
 		-isysroot $(SDK_SIM) \
 		-I$(CONTRIB_AARCH64_SIM)/include \
 		-I$(CONTRIB_AARCH64_SIM)/include/rem' \
@@ -154,7 +154,7 @@ EXTRA_ARMV7S       := \
 		-Wno-cast-align -Wno-shorten-64-to-32 \
 		-Wno-aggregate-return \
 		-I$(OPENSSL_PATH)/include \
-		-I$(OPUS_PATH)/include \		
+		-I$(OPUS_PATH)/include \
 		-miphoneos-version-min=$(DEPLOYMENT_TARGET_VERSION) \
 		-isysroot $(SDK_ARM) -DHAVE_NEON' \
 	EXTRA_LFLAGS='-arch armv7s -mcpu=cortex-a8 -mfpu=neon -marm \
@@ -318,7 +318,7 @@ BARESIP_BUILD_FLAGS_X86_64 := \
 
 BARESIP_BUILD_FLAGS_AARCH64 := \
 	$(BARESIP_BUILD_FLAGS) \
-	EXTRA_MODULES='g711 audiounit dtls_srtp srtp stun turn ice opus'	
+	EXTRA_MODULES='g711 audiounit dtls_srtp srtp stun turn ice opus'
 
 BARESIP_BUILD_FLAGS_ARMV7 := \
 	$(BARESIP_BUILD_FLAGS) \
